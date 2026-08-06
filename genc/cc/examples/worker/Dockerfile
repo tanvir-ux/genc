@@ -31,7 +31,7 @@ RUN apt update && apt install -y \
     zlib1g-dev \
     zip
 
-RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg \
+RUN curl -fsSL https://releases.bazel.build/bazel-release.pub.gpg \
     | gpg --dearmor >bazel-archive-keyring.gpg
 
 RUN mv bazel-archive-keyring.gpg /usr/share/keyrings
